@@ -1,0 +1,22 @@
+dateModified: 1636060829
+email:
+  fromEmail: wolfhoelscher@gmail.com
+  fromName: 'DIG Conference'
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    7452cb63-b1b9-414b-8e96-4289cc1ada79: 'DIG Conference' # DIG Conference
+    b71ae0f5-0f4a-4477-9f0c-3c338ad02d8d: Common # Common
+    f399f771-94d2-4947-b646-5167ef3e7739: 'DIG Conference' # DIG Conference
+system:
+  edition: solo
+  live: true
+  name: 'DIG Conference'
+  schemaVersion: 3.7.8
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
