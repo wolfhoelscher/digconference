@@ -21,3 +21,4 @@ web/servd-volumes/
 !.vscode/launch.json
 !.vscode/extensions.json
 /web/cpresources/*
+/xd-assets/*

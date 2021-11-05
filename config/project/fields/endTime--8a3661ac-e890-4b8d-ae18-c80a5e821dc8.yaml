@@ -1,0 +1,14 @@
+columnSuffix: qozjxvrp
+contentColumnType: time
+fieldGroup: d9fe5eee-fd03-438e-8e5b-4a3825748f8d # Events
+handle: endTime
+instructions: ''
+name: 'End Time'
+searchable: true
+settings:
+  max: null
+  min: null
+  minuteIncrement: 30
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Time

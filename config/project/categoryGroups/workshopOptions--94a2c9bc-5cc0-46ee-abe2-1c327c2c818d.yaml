@@ -1,0 +1,41 @@
+defaultPlacement: end
+fieldLayouts:
+  97b33eb0-f3a7-4277-b54f-416f5d9e266a:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: workshopOptions
+name: 'Workshop Options'
+siteSettings:
+  f399f771-94d2-4947-b646-5167ef3e7739: # DIG Conference
+    hasUrls: true
+    template: null
+    uriFormat: 'workshop-options/{slug}'
+structure:
+  maxLevels: null
+  uid: e1355d12-97c5-48c5-b71d-35e2a4736141

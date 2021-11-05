@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: workshops
+name: Workshops
+propagationMethod: all
+siteSettings:
+  f399f771-94d2-4947-b646-5167ef3e7739: # DIG Conference
+    enabledByDefault: true
+    hasUrls: true
+    template: workshops/_entry
+    uriFormat: 'workshops/{slug}'
+structure:
+  maxLevels: 1
+  uid: abf1c4f4-8fc6-49bd-addf-fafd082f001b
+type: structure
