@@ -1,0 +1,118 @@
+{% block htmlPage %}
+  {% include '_inc/_scripts.twig' %}
+
+{% block siteHead %}
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    {# Preload fonts #}
+				{# <link rel="preload" as="font" type="font/woff2" href="{{ siteUrl }}assets/build/fonts/CorporativeSlab-Bold.woff2" crossorigin="anonymous"> #}
+			
+    {% hook "seo" %}
+    {% block headStyles %}
+    <link rel="stylesheet" href="{{ siteUrl }}dist/main.css">
+    <link href="{{ siteUrl }}assets/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="{{ siteUrl }}assets/images/webclip.png" rel="apple-touch-icon">
+    {% endblock %}
+    {% block headScripts %}
+    {% endblock %}
+  </head>
+  {% endblock %}
+<body>
+    <div class="site-container">
+      {% block siteHeader %}
+      <header class="">
+
+        <div class="header--wrap wrap">
+          <div class="title-area">
+            {# Logo #}
+            <a 
+              aria-label="Return to Home Page"
+              href="{{ siteUrl }}"
+              class="logo--link">
+              {% set logo = branding.companyLogo.one() %}
+                {% if logo and logo.extension == 'svg' %}
+                  {{ svg(logo)|attr({width: '200'}) }}
+                {% endif %}
+                {% if logo and logo.extension != 'svg' %}
+                  <img src="{{ logo.url }}" id="logo" alt="{{ branding.companyName|e }} Logo">
+                {% endif %}
+            </a>
+          </div>
+          {% block mainMenu %}
+            {% include '_partials/main-menu.twig' %}
+          {% endblock %}
+
+          <div class="menu-toggle w-nav-button w--open">
+            <div data-w-id="89d2e0a2-0e97-188d-1d56-b81d90342398" class="burger-1">
+              <div data-w-id="89d2e0a2-0e97-188d-1d56-b81d90342399" class="b1-bar1"></div>
+              <div data-w-id="89d2e0a2-0e97-188d-1d56-b81d9034239a" class="b1-bar2">
+                <div class="b1-middle"></div>
+              </div>
+              <div data-w-id="89d2e0a2-0e97-188d-1d56-b81d9034239c" class="b1-bar3"></div>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </header>
+      {% endblock %}
+
+      <div class="site-inner {{ class }}">
+        <div class="content-sidebar-wrap">
+          <main class="content">
+            {% block main %}{% endblock %}
+          </main>
+        </div>
+      </div>
+  {% block siteFooter %}
+    {# {% cache %} #}
+      <footer class="site-footer {{ class }}">
+          {% block newsletterForm %}
+            {% include '_partials/newsletter-form.twig' %}
+          {% endblock %}
+        <div class="footer-top-wrap">
+          <div class="footer-area first">
+            <h4>Quicklinks</h4>
+            {% block quicklinks %}
+              {% include '_partials/quicklinks.twig' %}
+            {% endblock %}
+          </div>
+          <div class="footer-area middle">
+            <a href="check-availability" class="button footer" rel="bookmark">Check Availability</a>
+              {% block footerSocial %}
+                {% if seomatic.site %}
+                  {% include '_partials/footerSocial.twig' %}
+                {% endif %}
+              {% endblock %}
+          </div>
+          <div class="footer-area last">
+            {% block footerNAP %}
+              {% if seomatic.site %}
+                {% include '_partials/seomaticNAP.twig' %}
+              {% endif %}
+            {% endblock %}
+            <p class="footer-text"><a href="/terms-conditions" class="footer-area-link">Terms &amp; Conditions</a></p>
+          </div>
+        </div>
+        <div class="footer-bottom-wrap">
+          <p class="footer-copy">©{{ "now"|date("Y") }} {{ branding.companyName|e }}. <a href="/privacy-policy" class="footer-link">Privacy Policy</a>  |  Created by <a href="https://statusforward.com" class="footer-link" rel="noopener nofollow">Status Forward</a></p>
+        </div>
+        {% block chat %}
+        <div class="footer-chat-block"><a href="#" class="icon-chat"> Questions?</a></div>
+        {% endblock %}
+        <a href="#top" class="top icon-angle-up"><span class="top-label">Top</span></a>
+      </footer>
+      {# {% endcache %} #}
+  {% endblock %}
+
+    </div>
+
+    <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+  {{ endBody() }}
+  </body>
+</html>
+{% endblock %} {# end htmlPage #}
