@@ -1,0 +1,17 @@
+columnSuffix: bhgwtomc
+contentColumnType: datetime
+fieldGroup: d9fe5eee-fd03-438e-8e5b-4a3825748f8d # Events
+handle: date
+instructions: ''
+name: Date
+searchable: false
+settings:
+  max: null
+  min: null
+  minuteIncrement: '30'
+  showDate: true
+  showTime: false
+  showTimeZone: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Date
