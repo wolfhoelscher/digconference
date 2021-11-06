@@ -1,4 +1,4 @@
-dateModified: 1636153298
+dateModified: 1636212132
 email:
   fromEmail: wolfhoelscher@gmail.com
   fromName: 'DIG Conference'
@@ -33,7 +33,7 @@ meta:
     d8e2337d-f0d9-427b-891c-2c80172d9473: Workshops # Workshops
     d9fe5eee-fd03-438e-8e5b-4a3825748f8d: Events # Events
     dc7de2e2-0271-457c-96d8-17fc50854f46: 'Footer Logo' # Footer Logo
-    de6da1a6-867d-4e20-b532-29a8b37faff0: Category # Category
+    de6da1a6-867d-4e20-b532-29a8b37faff0: 'Workshop Category' # Workshop Category
     f399f771-94d2-4947-b646-5167ef3e7739: 'DIG Conference' # DIG Conference
 plugins:
   sprig:

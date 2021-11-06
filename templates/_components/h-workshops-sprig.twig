@@ -20,8 +20,19 @@
 
 <div id="w-results" class="w--loop">
     {% for workshop in query %}
-        {{ workshop.title|e }}
+        {% set cats = workshop.workshopCat.all() %}
+        <article class="workshop">
+            <header>
+                <h3 class="workshop--title">{{ workshop.title|e }}</h3>
+            </header>
+            <ul class="workshop--cats">
+            {% for cat in cats %}
+                <li class="workshp--cat workshop-{{ cat.id|e }}">
+                    <span class="workshop--icon"></span>
+                    <span class="screen-reader-text">{{ cat.title|e }}</span>
+                </li>
+            {% endfor %}
+            </ul>
+        </article>
     {% endfor %}
 </div>
-
-{# {% do sprig.pushUrl('?' ~ {page:'page', workshopCat:relatedTo}|url_encode) %} #}
