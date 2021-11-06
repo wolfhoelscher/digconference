@@ -1,0 +1,21 @@
+{% set query = craft.entries
+    .section("workshops")
+    .limit(8)
+    .category(7)
+    .all()
+%}
+
+<div id="w-filter">
+    <input type="checkbox" id="dev" name="dev" value="6">
+    <label for="dev"> Development</label>
+    <input type="checkbox" id="strat" name="strat" value="7">
+    <label for="strat"> Strategy and Content</label>
+    <input type="checkbox" id="design" name="design" value="8">
+    <label for="design"> Design</label>
+</div>
+
+<div id="w-results" class="w--loop">
+    {% for workshop in query %}
+        {{ workshop.title|e }}
+    {% endfor %}
+</div>

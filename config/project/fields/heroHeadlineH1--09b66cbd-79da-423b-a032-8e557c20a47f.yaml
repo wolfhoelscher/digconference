@@ -1,0 +1,19 @@
+columnSuffix: buypcalv
+contentColumnType: text
+fieldGroup: 0e0adc44-6b95-4f80-b769-844d1c551b50 # Home
+handle: heroHeadlineH1
+instructions: ''
+name: 'Hero Headline (h1)'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

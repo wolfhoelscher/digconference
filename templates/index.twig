@@ -2,11 +2,44 @@
 
 {% block main %}
     <section id="hero">
-        <h1>This is the hero.</h1>
+        <h1>{{ entry.heroHeadlineH1|e }}</h1>
+        <p class="hero--subhead">{{ entry.heroSubhead|e }}
     </section>
-    <section id="workshops"></section>
+    <section id="workshops">
+        <div class="w--wrap">
+            {% include "_components/h-workshops-sprig.twig" %}
+        </div>
+    </section>
     <section id="info">
-        <div id="events"></div>
-        <div id="news"></div>
+        {% set events = craft.entries
+            .section("events")
+            .limit(3)
+            .all()
+        %}
+        <div id="events">
+            <h2>Events</h2>
+            {% if events|length %}        
+            {% for event in events %}
+                <h3>{{ event.title }}</h3>
+            {% endfor %}
+            {% else %}
+                <h3>No events at this time.</h3>
+            {% endif %}
+        </div>
+        {% set news = craft.entries
+            .section("news")
+            .limit(3)
+            .all()
+        %}
+        <div id="news">
+            <h2>News</h2>
+            {% if news|length %}
+            {% for n in news %}
+                <h3>{{ n.title }}</h3>
+            {% endfor %}
+            {% else %}
+                <h3>No News at this time.</h3>
+            {% endif %}
+        </div>
     </section>
 {% endblock %}

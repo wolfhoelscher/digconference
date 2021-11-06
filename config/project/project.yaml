@@ -1,4 +1,4 @@
-dateModified: 1636150450
+dateModified: 1636153298
 email:
   fromEmail: wolfhoelscher@gmail.com
   fromName: 'DIG Conference'
@@ -6,6 +6,7 @@ email:
 meta:
   __names__:
     0b2c19fa-2230-4389-bba3-bb254a308b66: 'Organization Logo' # Organization Logo
+    0e0adc44-6b95-4f80-b769-844d1c551b50: Home # Home
     1b4a32f2-2de8-4a8d-8208-58b3c45d9da1: Default # Default
     3a566891-a13e-4afd-b861-dbb70617c06f: Home # Home
     3c073182-f385-4f69-9d7e-09d570f452b2: 'Start Time' # Start Time
@@ -13,6 +14,8 @@ meta:
     7c06fcf9-1581-471a-882f-9048a934814a: Branding # Branding
     8a3661ac-e890-4b8d-ae18-c80a5e821dc8: 'End Time' # End Time
     8f2a8a85-dbf7-4bb1-8090-3de22a20ace4: Globals # Globals
+    09b66cbd-79da-423b-a032-8e557c20a47f: 'Hero Headline (h1)' # Hero Headline (h1)
+    9dba5aaf-a7b7-4b18-94de-6480f73ffe8f: 'Hero Subhead' # Hero Subhead
     9e958346-5830-4e4e-83a9-8782cb80dd70: Default # Default
     9edfd08f-a121-4075-888e-1184c893ecc3: News # News
     35ee41a8-521e-4670-8ff9-0a988d4bf1d1: Assets # Assets
@@ -38,7 +41,7 @@ plugins:
     enabled: true
     schemaVersion: 1.0.1
 system:
-  edition: solo
+  edition: pro
   live: true
   name: 'DIG Conference'
   schemaVersion: 3.7.8
