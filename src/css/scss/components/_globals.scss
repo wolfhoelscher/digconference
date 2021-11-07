@@ -26,6 +26,10 @@ body {
     min-height: 100vh;
 }
 
+.site-container {
+    position: relative;
+}
+
 p,
 li {
     font-size: 14px;
@@ -60,7 +64,7 @@ h3,
 
 h1,
 .h1 {
-    font-size: calc(5rem + 2.5vw);
+    font-size: calc(3rem + 2.5vw);
     letter-spacing: 0.75rem;
     line-height: calc(1.1em + 1.25vw);
     margin-bottom: 0;

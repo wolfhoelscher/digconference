@@ -2,17 +2,19 @@
 
 {% block main %}
     <section id="hero">
-        <h1>{{ entry.heroHeadlineH1|e }}</h1>
-        <p class="hero--subhead">{{ entry.heroSubhead|e }}
+        <div class="hero--wrap container">
+            <h1>{{ entry.heroHeadlineH1|e }}</h1>
+            <p class="hero--subhead">{{ entry.heroSubhead|e }}
+        </div>
     </section>
     <section id="workshops">
-        <div class="w--wrap">
+        <div class="w--wrap container">
             <h2>Customize Your DIG Experience</h2>
             <p>Choose from the options below to filter workshops available this year at DIG2021!</p>
             {{ sprig('_components/h-workshops-sprig') }}
         </div>
     </section>
-    <section id="info">
+    <section id="info" class="container">
         {% set start = now|date_modify('-2 months')|atom %}
         {% set events = craft.entries
             .section("events")
