@@ -39,11 +39,11 @@
                     class="logo--link">
                     {% set logo = branding.orgLogo.one() %}
                         {% if logo and logo.extension == 'svg' %}
-                        {{ svg(logo)|attr({width: '200'}) }}
+                        {{ svg(logo)|attr({width: '188'}) }}
                         {% endif %}
                         {% if logo and logo.extension != 'svg' %}
                         <img src="{{ logo.url }}" id="logo" alt="{{ branding.orgName|e }} Logo">
-                        {% endif %}
+                    {% endif %}
                     </a>
                 </div>
                 {% block mainMenu %}
@@ -59,12 +59,23 @@
             </main>
         {% block siteFooter %}
             {# {% cache %} #}
-            <footer class="site-footer">
+            <footer class="site-footer" style="background:#1E3358">
                 <div class="footer--wrap">
-                <div class="footer-area first">
-                </div>
-                <div class="footer-area last">
-                </div>
+                    <div class="footer-area first">
+                        <figure class="footer-logo" aria-hidden="true">
+                        {% set logo = branding.footerLogo.one() %}
+                        {% if logo and logo.extension == 'svg' %}
+                            {{ svg(logo)|attr({width: '75'}) }}
+                            {% endif %}
+                            {% if logo and logo.extension != 'svg' %}
+                            <img src="{{ logo.url }}" id="logo" alt="{{ branding.orgName|e }} Logo">
+                        {% endif %}
+                        </figure>
+                    </div>
+                    <div class="footer-area last">
+                        <h2 class="h3">Connect and Share</h2>
+                        <div class="social-icons"><a class="social-icon facebook" href="//facebook.com/digconference" rel="noopener nofollow" aria-label="Follow us on Facebook aka Meta">{% include "_svg/icon-facebook.twig" %}</a><a class="social-icon twitter" href="//twiter.com/digconference" rel="noopener nofollow" aria-label="Follow us on Twitter">{% include "_svg/icon-twitter.twig" %}</a>
+                    </div>
                 </div>
             </footer>
             {# {% endcache %} #}
