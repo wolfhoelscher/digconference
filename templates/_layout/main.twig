@@ -29,7 +29,7 @@
             <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
             <div class="site-container">
             {% block siteHeader %}
-            <header class="">
+            <header class="site-header">
                 <div class="header--wrap wrap">
                 <div class="title-area">
                     {# Logo #}
@@ -47,7 +47,7 @@
                     </a>
                 </div>
                 {% block mainMenu %}
-                    {# {% include '_partials/main-menu.twig' %} #}
+                    {% include '_partials/main-menu.twig' %}
                 {% endblock %}
                 </div>{# end .header--wrap #}
             </header>
