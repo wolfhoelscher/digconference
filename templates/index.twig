@@ -11,8 +11,11 @@
         </div>
     </section>
     <section id="info">
+        {% set start = now|date_modify('-2 months')|atom %}
         {% set events = craft.entries
             .section("events")
+            .date('>= start')
+            .order('date', 'startTime')
             .limit(3)
             .all()
         %}
@@ -20,8 +23,9 @@
             <h2>Events</h2>
             {% if events|length %}        
             {% for event in events %}
-                <h3>{{ event.title }}</h3>
+                {% include "_partials/_tease-events.twig" with {event: event} %}
             {% endfor %}
+                <a class="news--more" href="#" rel="bookmark">View All<span class="screen-reader-text"> all Events</span></a>
             {% else %}
                 <h3>No events at this time.</h3>
             {% endif %}
@@ -29,14 +33,16 @@
         {% set news = craft.entries
             .section("news")
             .limit(3)
+            .orderBy('postDate desc')
             .all()
         %}
         <div id="news">
             <h2>News</h2>
             {% if news|length %}
             {% for n in news %}
-                <h3>{{ n.title }}</h3>
+                {% include "_partials/_tease-news.twig" with {'n': n} %}
             {% endfor %}
+                <a class="news--more" href="#" rel="bookmark">View All<span class="screen-reader-text"> all New articles</span></a>
             {% else %}
                 <h3>No News at this time.</h3>
             {% endif %}
