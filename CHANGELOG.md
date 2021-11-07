@@ -1,5 +1,23 @@
 # Changelog
+## 1.0.2 - 2021-11-07
+### Added
+- logo global fields and main.twig init
+- accessibiltiy styles
+- main menu template init and App.js - first npm dev run
+- homepage sections and workshop sprig template init
+- sprig checkbox filter for workshops
+- render workshop cats for screen readers
+- Sprig powered workshop cat filter using checkboxes
+- dynamic news and events sections
+- page svg icons
+- main menu init
+- customize headline and text
 
+### Changed
+- home/index init
+- main.twig file rework
+### Removed
+- test bg color in footer
 ## 1.0.1 - 2021-11-05
 ### Added
 - Sections and fields
