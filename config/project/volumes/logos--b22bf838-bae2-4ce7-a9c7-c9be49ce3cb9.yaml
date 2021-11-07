@@ -1,5 +1,5 @@
 fieldLayouts:
-  8e1da8f7-fbf4-4207-9dfe-bcdbbe226ae4:
+  1b18a847-22c9-4524-9129-2069aee9a286:
     tabs:
       -
         elements:
@@ -23,11 +23,11 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\EntryTitleField
+            type: craft\fieldlayoutelements\AssetTitleField
             warning: null
             width: 100
           -
-            fieldUid: de6da1a6-867d-4e20-b532-29a8b37faff0 # Workshop Category
+            fieldUid: ab72d918-6eef-4db5-8cbd-f685cfedbb9f # Alt Tag
             instructions: null
             label: null
             required: false
@@ -37,11 +37,13 @@ fieldLayouts:
             width: 100
         name: Content
         sortOrder: 1
-handle: workshops
-hasTitleField: true
-name: Workshops
-section: b4cc5457-0dc9-4b17-b46a-5d150cc4cd67 # Workshops
+handle: logos
+hasUrls: true
+name: Logos
+settings:
+  path: /assets/logos
 sortOrder: 1
-titleFormat: null
 titleTranslationKeyFormat: null
-titleTranslationMethod: site
+titleTranslationMethod: null
+type: craft\volumes\Local
+url: /logos/

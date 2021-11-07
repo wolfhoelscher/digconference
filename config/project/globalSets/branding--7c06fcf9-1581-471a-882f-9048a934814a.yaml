@@ -1,0 +1,37 @@
+fieldLayouts:
+  747c7215-b02d-44ed-a82c-2177b0913dc4:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: c819cbe2-c3b3-440f-920f-40cda13e406b # Organization Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0b2c19fa-2230-4389-bba3-bb254a308b66 # Organization Logo
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: dc7de2e2-0271-457c-96d8-17fc50854f46 # Footer Logo
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Organization Info'
+        sortOrder: 1
+handle: branding
+name: Branding
+sortOrder: 1

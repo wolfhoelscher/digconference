@@ -1,0 +1,34 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 8f2a8a85-dbf7-4bb1-8090-3de22a20ace4 # Globals
+handle: footerLogo
+instructions: ''
+name: 'Footer Logo'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowUploads: true
+  allowedKinds:
+    - image
+  defaultUploadLocationSource: 'volume:b22bf838-bae2-4ce7-a9c7-c9be49ce3cb9' # Logos
+  defaultUploadLocationSubpath: ''
+  limit: '1'
+  localizeRelations: false
+  previewMode: full
+  restrictFiles: '1'
+  selectionLabel: 'Add a footer logo'
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:b22bf838-bae2-4ce7-a9c7-c9be49ce3cb9' # Logos
+  singleUploadLocationSubpath: ''
+  source: null
+  sources:
+    - 'volume:b22bf838-bae2-4ce7-a9c7-c9be49ce3cb9' # Logos
+  targetSiteId: null
+  useSingleFolder: false
+  validateRelatedElements: true
+  viewMode: large
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets
