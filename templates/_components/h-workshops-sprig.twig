@@ -17,18 +17,28 @@
         {% set i = i + 1 %}
     {% endfor %}
 </ul>
-
 <div id="w-results" class="w--loop">
     {% for workshop in query %}
         {% set cats = workshop.workshopCat.all() %}
+        
         <article class="workshop">
             <header>
-                <h3 class="workshop--title">{{ workshop.title|e }}</h3>
+                <h3 class="w--title">{{ workshop.title|e }}</h3>
             </header>
-            <ul class="workshop--cats">
+            <ul class="w--cats">
             {% for cat in cats %}
-                <li class="workshp--cat workshop-{{ cat.id|e }}">
-                    <span class="workshop--icon"></span>
+                <li class="workshop--cat workshop-{{ cat.id|e }}">
+                    <span class="w--icon">
+                    {% switch cat.id %}
+                        {% case "6" %}
+                        {% include "_svg/dev-icon.twig" %}
+                        {% case "7" %}
+                        {% include "_svg/strat-icon.twig" %}
+                        {% case "8" %}
+                        {% include "_svg/design-icon.twig" %}
+                        {% default %}
+                    {% endswitch %}
+                    </span>
                     <span class="screen-reader-text">{{ cat.title|e }}</span>
                 </li>
             {% endfor %}
