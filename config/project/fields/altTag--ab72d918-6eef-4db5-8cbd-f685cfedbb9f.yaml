@@ -1,0 +1,19 @@
+columnSuffix: bczzioby
+contentColumnType: string(800)
+fieldGroup: 35ee41a8-521e-4670-8ff9-0a988d4bf1d1 # Assets
+handle: altTag
+instructions: ''
+name: 'Alt Tag'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: 200
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

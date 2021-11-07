@@ -1,0 +1,89 @@
+{% block htmlPage %}
+  {% include '_inc/_scripts.twig' %}
+
+    {% block siteHead %}
+    <!DOCTYPE html>
+    <html lang="en-US">
+        <head>
+            <meta charset="utf-8">
+            <meta content="width=device-width, initial-scale=1" name="viewport">
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+            {# Preload fonts #}
+                        {# <link rel="preload" as="font" type="font/woff2" href="{{ siteUrl }}assets/build/fonts/CorporativeSlab-Bold.woff2" crossorigin="anonymous"> #}
+                    
+            {% hook "seo" %}
+            {% block headStyles %}
+            <link rel="stylesheet" href="{{ siteUrl }}dist/main.css">
+            <link href="{{ siteUrl }}assets/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+            <link href="{{ siteUrl }}assets/images/webclip.png" rel="apple-touch-icon">
+            {% endblock %}
+            {% block headScripts %}
+            {% endblock %}
+        </head>
+        {% endblock %}
+        {% block body %}
+        <body>
+            <a class="skip-link screen-reader-text" href="#nav-main">Skip to navigation</a>
+            <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+            <div class="site-container">
+            {% block siteHeader %}
+            <header class="site-header">
+                <div class="header--wrap wrap">
+                <div class="title-area">
+                    {# Logo #}
+                    <a 
+                    aria-label="Return to Home Page"
+                    href="{{ siteUrl }}"
+                    class="logo--link">
+                    {% set logo = branding.orgLogo.one() %}
+                        {% if logo and logo.extension == 'svg' %}
+                        {{ svg(logo)|attr({width: '188'}) }}
+                        {% endif %}
+                        {% if logo and logo.extension != 'svg' %}
+                        <img src="{{ logo.url }}" id="logo" alt="{{ branding.orgName|e }} Logo">
+                    {% endif %}
+                    </a>
+                </div>
+                {% block mainMenu %}
+                    {% include '_partials/main-menu.twig' %}
+                {% endblock %}
+                </div>{# end .header--wrap #}
+            </header>
+            {% endblock %}
+            <main id="content" class="content">
+            {% block main %}
+                <h1>No show you here. Sorry!</h1>
+            {% endblock %}
+            </main>
+        {% block siteFooter %}
+            {# {% cache %} #}
+            <footer class="site-footer">
+                <div class="footer--wrap">
+                    <div class="footer-area first">
+                        <figure class="footer-logo" aria-hidden="true">
+                        {% set logo = branding.footerLogo.one() %}
+                        {% if logo and logo.extension == 'svg' %}
+                            {{ svg(logo)|attr({width: '75'}) }}
+                            {% endif %}
+                            {% if logo and logo.extension != 'svg' %}
+                            <img src="{{ logo.url }}" id="logo" alt="{{ branding.orgName|e }} Logo">
+                        {% endif %}
+                        </figure>
+                    </div>
+                    <div class="footer-area last">
+                        <h2 class="h3">Connect and Share</h2>
+                        <div class="social-icons"><a class="social-icon facebook" href="//facebook.com/digconference" rel="noopener nofollow" aria-label="Follow us on Facebook aka Meta">{% include "_svg/icon-facebook.twig" %}</a><a class="social-icon twitter" href="//twiter.com/digconference" rel="noopener nofollow" aria-label="Follow us on Twitter">{% include "_svg/icon-twitter.twig" %}</a>
+                    </div>
+                </div>
+            </footer>
+            {# {% endcache %} #}
+        {% endblock %}
+            </div>{# end .site-container #}
+            {{ sprig.script }}
+            <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+        </body>
+        {% endblock %}
+    </html>
+{% endblock %} {# end htmlPage #}

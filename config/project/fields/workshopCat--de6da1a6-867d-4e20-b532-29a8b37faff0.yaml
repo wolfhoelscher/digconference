@@ -1,9 +1,9 @@
 columnSuffix: null
 contentColumnType: string
 fieldGroup: d8e2337d-f0d9-427b-891c-2c80172d9473 # Workshops
-handle: category
+handle: workshopCat
 instructions: ''
-name: Category
+name: 'Workshop Category'
 searchable: true
 settings:
   allowLimit: false
@@ -13,7 +13,7 @@ settings:
   limit: null
   localizeRelations: false
   selectionLabel: ''
-  showSiteMenu: false
+  showSiteMenu: true
   source: 'group:94a2c9bc-5cc0-46ee-abe2-1c327c2c818d' # Workshop Options
   sources: '*'
   targetSiteId: null

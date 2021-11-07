@@ -1,0 +1,19 @@
+columnSuffix: iqviaavg
+contentColumnType: string(800)
+fieldGroup: 8f2a8a85-dbf7-4bb1-8090-3de22a20ace4 # Globals
+handle: orgName
+instructions: ''
+name: 'Organization Name'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: 200
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
