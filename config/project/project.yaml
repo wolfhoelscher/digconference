@@ -1,28 +1,39 @@
-dateModified: 1636147397
+dateModified: 1636212132
 email:
   fromEmail: wolfhoelscher@gmail.com
   fromName: 'DIG Conference'
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
+    0b2c19fa-2230-4389-bba3-bb254a308b66: 'Organization Logo' # Organization Logo
+    0e0adc44-6b95-4f80-b769-844d1c551b50: Home # Home
     1b4a32f2-2de8-4a8d-8208-58b3c45d9da1: Default # Default
     3a566891-a13e-4afd-b861-dbb70617c06f: Home # Home
     3c073182-f385-4f69-9d7e-09d570f452b2: 'Start Time' # Start Time
     5e1a2be2-d470-49ee-8b38-bd0922219a84: Home # Home
+    7c06fcf9-1581-471a-882f-9048a934814a: Branding # Branding
     8a3661ac-e890-4b8d-ae18-c80a5e821dc8: 'End Time' # End Time
+    8f2a8a85-dbf7-4bb1-8090-3de22a20ace4: Globals # Globals
+    09b66cbd-79da-423b-a032-8e557c20a47f: 'Hero Headline (h1)' # Hero Headline (h1)
+    9dba5aaf-a7b7-4b18-94de-6480f73ffe8f: 'Hero Subhead' # Hero Subhead
     9e958346-5830-4e4e-83a9-8782cb80dd70: Default # Default
     9edfd08f-a121-4075-888e-1184c893ecc3: News # News
+    35ee41a8-521e-4670-8ff9-0a988d4bf1d1: Assets # Assets
     45f36e39-a33d-480a-b301-8490c3826065: Date # Date
     94a2c9bc-5cc0-46ee-abe2-1c327c2c818d: 'Workshop Options' # Workshop Options
     6557ba0c-1632-484f-ae2e-ab7f22b55066: News # News
     7452cb63-b1b9-414b-8e96-4289cc1ada79: 'DIG Conference' # DIG Conference
     a5744892-cefc-4ba8-9b73-1f6a864889c5: Events # Events
+    ab72d918-6eef-4db5-8cbd-f685cfedbb9f: 'Alt Tag' # Alt Tag
     b4cc5457-0dc9-4b17-b46a-5d150cc4cd67: Workshops # Workshops
+    b22bf838-bae2-4ce7-a9c7-c9be49ce3cb9: Logos # Logos
     b71ae0f5-0f4a-4477-9f0c-3c338ad02d8d: Common # Common
+    c819cbe2-c3b3-440f-920f-40cda13e406b: 'Organization Name' # Organization Name
     cd901ed7-4538-46c2-bb9f-87a94182e14f: Workshops # Workshops
     d8e2337d-f0d9-427b-891c-2c80172d9473: Workshops # Workshops
     d9fe5eee-fd03-438e-8e5b-4a3825748f8d: Events # Events
-    de6da1a6-867d-4e20-b532-29a8b37faff0: Category # Category
+    dc7de2e2-0271-457c-96d8-17fc50854f46: 'Footer Logo' # Footer Logo
+    de6da1a6-867d-4e20-b532-29a8b37faff0: 'Workshop Category' # Workshop Category
     f399f771-94d2-4947-b646-5167ef3e7739: 'DIG Conference' # DIG Conference
 plugins:
   sprig:
@@ -30,7 +41,7 @@ plugins:
     enabled: true
     schemaVersion: 1.0.1
 system:
-  edition: solo
+  edition: pro
   live: true
   name: 'DIG Conference'
   schemaVersion: 3.7.8
