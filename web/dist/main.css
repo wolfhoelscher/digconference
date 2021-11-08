@@ -507,8 +507,36 @@ h3,
  * > Header
 ***************************************************/
 .navbar {
-  padding-top: 5rem;
+  padding-top: 0;
   z-index: 1000;
+}
+.navbar-brand {
+  padding-top: 2rem;
+}
+.navbar-collapse {
+  position: absolute;
+  top: 11rem;
+  left: 0;
+  right: 0;
+  background-color: #F15A29;
+  padding: 2rem;
+}
+.navbar-dark .navbar-toggler {
+  border: 1px solid #fff;
+}
+.navbar-dark .navbar-nav .nav-link,
+.nav-link.button {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.8rem;
+  line-height: 2.16rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #fff;
+}
+.nav-link.button {
+  padding-left: 0;
+  border-bottom: none;
 }
 /***************************************************
  * > Content
