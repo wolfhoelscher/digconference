@@ -111,6 +111,20 @@
         }
     }
     
+    @media only screen and (min-width: 767px) {
+        .w-filter {
+            display: flex;
+            padding-right: 7.5rem;
+            padding-left: 7.5rem;
+            justify-content: space-between;
+        }
+        #w-results {
+            display: grid;
+            grid-gap: 2rem;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
     @media only screen and (min-width: 992px) {
         .w--wrap.container {
             padding-top: 6.5rem;
@@ -120,18 +134,20 @@
             margin-top: 4.4rem;
             margin-bottom: 4.4rem;
         }
-    }
-    
-    @media only screen and (min-width: 767px) {
-        .w-filter {
-            display: flex;
-            padding-right: 7.5rem;
-            padding-left: 7.5rem;
-            justify-content: space-between;
+        #w-results {
+            grid-gap: 3rem;
+            grid-template-columns: repeat(3, 1fr);
         }
         .workshop {
-            flex: 1 1 200px;
-            margin: 2rem;
+            height: 226px;
+        }
+    }
+    
+    @media only screen and (min-width: 1200px) {
+        #w-results {
+            display: grid;
+            grid-gap: 4rem;
+            grid-template-columns: repeat(4, minmax( 240px, 280px));
         }
     }
     /** Info **/

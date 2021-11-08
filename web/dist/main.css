@@ -652,17 +652,6 @@ h3,
 .workshop .w--link:hover {
   color: #fff;
 }
-@media only screen and (min-width: 992px) {
-  .w--wrap.container {
-    padding-top: 6.5rem;
-    padding-bottom: 6.5rem;
-  }
-
-  .w-filter {
-    margin-top: 4.4rem;
-    margin-bottom: 4.4rem;
-  }
-}
 @media only screen and (min-width: 767px) {
   .w-filter {
     display: -webkit-box;
@@ -675,11 +664,37 @@ h3,
             justify-content: space-between;
   }
 
+  #w-results {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (min-width: 992px) {
+  .w--wrap.container {
+    padding-top: 6.5rem;
+    padding-bottom: 6.5rem;
+  }
+
+  .w-filter {
+    margin-top: 4.4rem;
+    margin-bottom: 4.4rem;
+  }
+
+  #w-results {
+    grid-gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .workshop {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 200px;
-            flex: 1 1 200px;
-    margin: 2rem;
+    height: 226px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #w-results {
+    display: grid;
+    grid-gap: 4rem;
+    grid-template-columns: repeat(4, minmax(240px, 280px));
   }
 }
 /** Info **/
