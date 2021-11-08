@@ -74,26 +74,24 @@
     }
     
     #w-results {
-        /* display: flex;
-        justify-content: center;
-        flex-wrap: wrap; */
+        display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+        padding-left: 0;
+        padding-right: 0;
     }
     
-    .workshop .w--link {
+    .workshop {
         position: relative;
-        /* flex: 1 1 300px;
-        margin: 2rem;
-        gap: 4rem;*/
+        flex: 1 1 300px;
         display: flex;
         justify-content: center;
         align-items: center;
         background: $purple-to-orange;
         border-radius: 12px;
         cursor: pointer;
-        max-width: 250px;
-        height: 226px;
-        /* margin-bottom: 4rem; */
+        height: 135px;
+        margin-bottom: 2rem;
         transition: background-color .75s;
         .w--cats {
             position: absolute;
@@ -132,8 +130,8 @@
             justify-content: space-between;
         }
         .workshop {
-            /* max-width: 241px;
-            max-height: 225px; */
+            flex: 1 1 200px;
+            margin: 2rem;
         }
     }
     /** Info **/

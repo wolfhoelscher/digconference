@@ -596,18 +596,22 @@ h3,
   margin-right: 12px;
 }
 #w-results {
-  /* display: flex;
-  justify-content: center;
-  flex-wrap: wrap; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 0;
+  padding-right: 0;
 }
-.workshop .w--link {
+.workshop {
   position: relative;
-  /* flex: 1 1 300px;
-  margin: 2rem;
-  gap: 4rem;*/
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 300px;
+          flex: 1 1 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -622,14 +626,13 @@ h3,
   background: linear-gradient(to right, #4D2E90, #CE2A7F, #F05A28);
   border-radius: 12px;
   cursor: pointer;
-  max-width: 250px;
-  height: 226px;
-  /* margin-bottom: 4rem; */
+  height: 135px;
+  margin-bottom: 2rem;
   -webkit-transition: background-color 0.75s;
   -o-transition: background-color 0.75s;
   transition: background-color 0.75s;
 }
-.workshop .w--link .w--cats {
+.workshop .w--cats {
   position: absolute;
   bottom: 10px;
   right: 15px;
@@ -640,13 +643,13 @@ h3,
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-.workshop .w--link .w--icon {
+.workshop .w--icon {
   padding-left: 12px;
 }
-.workshop .w--link:hover {
+.workshop:hover {
   background: #F15A29;
 }
-.workshop .w--link .w--link:hover {
+.workshop .w--link:hover {
   color: #fff;
 }
 @media only screen and (min-width: 992px) {
@@ -673,8 +676,10 @@ h3,
   }
 
   .workshop {
-    /* max-width: 241px;
-    max-height: 225px; */
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 200px;
+            flex: 1 1 200px;
+    margin: 2rem;
   }
 }
 /** Info **/

@@ -30,10 +30,7 @@
 <div id="w-results" class="w--loop container">
     {% for workshop in query %}
         {% set cats = workshop.workshopCat.all() %}
-    {% if loop.first or loop.index == 5 %}    
-    <div class="row">
-    {% endif %}
-        <article class="workshop col-sm-12 col-md-4 col-lg-3">
+        <article class="workshop">
             <a class="w--link" href="#" aria-label="{{ workshop.title|e }}" rel="bookmark">
                 <header>
                     <h3 class="w--title">{{ workshop.title|e }}</h3>
@@ -58,6 +55,5 @@
                 </ul>
             </a>
         </article>
-        {% if loop.index == 4 or loop.last %}</div>{% endif %}
     {% endfor %}
 </div>
