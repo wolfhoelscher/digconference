@@ -596,12 +596,18 @@ h3,
   margin-right: 12px;
 }
 #w-results {
+  /* display: flex;
+  justify-content: center;
+  flex-wrap: wrap; */
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.workshop {
+.workshop .w--link {
   position: relative;
+  /* flex: 1 1 300px;
+  margin: 2rem;
+  gap: 4rem;*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -616,14 +622,14 @@ h3,
   background: linear-gradient(to right, #4D2E90, #CE2A7F, #F05A28);
   border-radius: 12px;
   cursor: pointer;
-  width: 241px;
+  max-width: 250px;
   height: 226px;
-  margin-bottom: 40px;
+  /* margin-bottom: 4rem; */
   -webkit-transition: background-color 0.75s;
   -o-transition: background-color 0.75s;
   transition: background-color 0.75s;
 }
-.workshop .w--cats {
+.workshop .w--link .w--cats {
   position: absolute;
   bottom: 10px;
   right: 15px;
@@ -634,13 +640,13 @@ h3,
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-.workshop .w--icon {
+.workshop .w--link .w--icon {
   padding-left: 12px;
 }
-.workshop:hover {
+.workshop .w--link:hover {
   background: #F15A29;
 }
-.workshop .w--link:hover {
+.workshop .w--link .w--link:hover {
   color: #fff;
 }
 @media only screen and (min-width: 992px) {
@@ -664,6 +670,11 @@ h3,
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+
+  .workshop {
+    /* max-width: 241px;
+    max-height: 225px; */
   }
 }
 /** Info **/

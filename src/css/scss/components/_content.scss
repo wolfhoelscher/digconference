@@ -74,20 +74,26 @@
     }
     
     #w-results {
+        /* display: flex;
+        justify-content: center;
+        flex-wrap: wrap; */
         justify-content: space-between;
     }
     
-    .workshop {
+    .workshop .w--link {
         position: relative;
+        /* flex: 1 1 300px;
+        margin: 2rem;
+        gap: 4rem;*/
         display: flex;
         justify-content: center;
         align-items: center;
         background: $purple-to-orange;
         border-radius: 12px;
         cursor: pointer;
-        width: 241px;
+        max-width: 250px;
         height: 226px;
-        margin-bottom: 40px;
+        /* margin-bottom: 4rem; */
         transition: background-color .75s;
         .w--cats {
             position: absolute;
@@ -124,6 +130,10 @@
             padding-right: 7.5rem;
             padding-left: 7.5rem;
             justify-content: space-between;
+        }
+        .workshop {
+            /* max-width: 241px;
+            max-height: 225px; */
         }
     }
     /** Info **/
