@@ -27,8 +27,8 @@
     /** Workshops **/
     
     .w--wrap.container {
-        padding-top: 5rem;
-        padding-bottom: 5rem;
+        padding-top: $p-m;
+        padding-bottom: $p-m;
         border-bottom: 1px solid $white;
     }
     
@@ -129,8 +129,8 @@
     
     @media only screen and (min-width: 992px) {
         .w--wrap.container {
-            padding-top: 6.5rem;
-            padding-bottom: 6.5rem;
+            padding-top: $p-t;
+            padding-bottom: $p-t;
         }
         .w-filter {
             margin-top: 4.4rem;
@@ -153,3 +153,79 @@
         }
     }
     /** Info **/
+    
+    #info {
+        border-bottom: 1px solid $white;
+    }
+    
+    #events,
+    #news {
+        padding-top: $p-m;
+        padding-bottom: $p-m;
+    }
+    
+    #info h2 {
+        margin-bottom: 1.7rem;
+    }
+    
+    #events {
+        border-bottom: 1px solid $white;
+    }
+    
+    .event,
+    .news {
+        display: block;
+        padding: 2.3rem 0;
+        border-bottom: 1px solid $article-border;
+        &:last-of-type {
+            border-bottom: none;
+        }
+    }
+    
+    .event--link {
+        display: flex;
+        align-items: center;
+    }
+    
+    .event--date {
+        width: 7rem;
+        height: 7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: $purple-to-blue;
+        border-radius: 12px;
+        margin: 0 3rem 0 0;
+        .month {
+            color: $black;
+            font-size: 1.6rem;
+            text-transform: uppercase;
+        }
+        .day {
+            color: $black;
+            font-size: 3.6rem;
+            font-weight: 700;
+            letter-spacing: 0.75px;
+            line-height: 3rem;
+        }
+    }
+    
+    .event--title,
+    .news--title {
+        text-transform: none;
+    }
+    
+    #info .meta {
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 2.95rem;
+        margin-bottom: 0;
+    }
+    
+    .news--more {
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-align: right;
+        display: block;
+    }

@@ -17,7 +17,8 @@
     left: 0;
     right: 0;
     background-color: $orange;
-    padding: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .navbar-dark .navbar-toggler {
@@ -38,4 +39,15 @@
 .nav-link.button {
     padding-left: 0;
     border-bottom: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar-collapse {
+        background: transparent;
+        position: relative;
+        top: 0;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        border-bottom: none;
+    }
 }

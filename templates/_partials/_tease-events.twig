@@ -1,6 +1,6 @@
 <article class="event">
     <a class="event--link info--link" href="#" aria-label="{{ event.title|e }}" rel="bookmark">
-        {% if event.date|length %}<figure class="event--date"><span class="month">{{ event.date|date('M')|e }}</span class="day"><br>{{ event.date|date('j')|e }}</span></figure>{% endif %}
+        {% if event.date|length %}<figure class="event--date"><div class="month">{{ event.date|date('M')|e }}</div><div class="day">{{ event.date|date('j')|e }}</div></figure>{% endif %}
         <div class="event--info">
             <h3 class="event--title">{{ event.title|e }}
             {% if event.startTime %}

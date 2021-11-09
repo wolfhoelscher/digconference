@@ -2,19 +2,19 @@
 
 {% block main %}
     <section id="hero">
-        <div class="hero--wrap container">
+        <div class="hero--wrap container gx-5">
             <h1>{{ entry.heroHeadlineH1|e }}</h1>
             <p class="hero--subhead">{{ entry.heroSubhead|e }}
         </div>
     </section>
     <section id="workshops">
-        <div class="w--wrap container">
+        <div class="w--wrap container gx-5">
             <h2>Customize Your DIG Experience</h2>
             <p>Choose from the options below to filter workshops available this year at DIG2021!</p>
             {{ sprig('_components/h-workshops-sprig') }}
         </div>
     </section>
-    <section id="info" class="container">
+    <section id="info" class="container gx-5">
         {% set start = now|date_modify('-2 months')|atom %}
         {% set events = craft.entries
             .section("events")
@@ -25,10 +25,12 @@
         %}
         <div id="events">
             <h2>Events</h2>
-            {% if events|length %}        
+            {% if events|length %} 
+            <div class="events--loop loop-wrap">       
             {% for event in events %}
                 {% include "_partials/_tease-events.twig" with {event: event} %}
             {% endfor %}
+            </div>
                 <a class="news--more" href="#" rel="bookmark">View All<span class="screen-reader-text"> all Events</span></a>
             {% else %}
                 <h3>No events at this time.</h3>
@@ -43,9 +45,11 @@
         <div id="news">
             <h2>News</h2>
             {% if news|length %}
+            <div class="news--loop loop-wrap">
             {% for n in news %}
                 {% include "_partials/_tease-news.twig" with {'n': n} %}
             {% endfor %}
+            </div>
                 <a class="news--more" href="#" rel="bookmark">View All<span class="screen-reader-text"> all New articles</span></a>
             {% else %}
                 <h3>No News at this time.</h3>

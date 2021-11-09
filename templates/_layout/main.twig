@@ -31,7 +31,7 @@
             <div class="site-container">
             {% block siteHeader %}
             <header class="site-header container navbar navbar-expand-md navbar-dark bg-transparent">
-                <div class="header--wrap container-fluid">
+                <div class="header--wrap container gx-5 ">
                     <a 
                     aria-label="Return to Home Page"
                     href="{{ siteUrl }}"
@@ -46,7 +46,7 @@
                     </a>
                     {# Navbar #}
                     <button id="navbar-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-main" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <nav id="nav-main" class="main-menu collapse navbar-collapse">
+                    <nav id="nav-main" class="main-menu collapse navbar-collapse container-fluid gx-5">
                         <ul class="nav--list navbar-nav mx-auto">
                             <li><a class="nav-link" href="#">About</a></li>
                             <li><a class="nav-link" href="#">Speakers</a></li>
@@ -64,7 +64,7 @@
             </main>
         {% block siteFooter %}
             {# {% cache %} #}
-            <footer class="site-footer container">
+            <footer class="site-footer container gx-5">
                 <div class="footer--wrap">
                     <div class="footer-area first">
                         <figure class="footer-logo" aria-hidden="true">

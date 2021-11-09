@@ -16,8 +16,15 @@ $black: #13223C;
 $white: #fff;
 $purple: #1E3358;
 $orange: #F15A29;
+$article-border: #78859B;
 $purple-to-blue: linear-gradient(#4D2E90, #3EC2D5);
 $purple-to-orange: linear-gradient( to right, #4D2E90, #CE2A7F, #F05A28);
+
+/** Container padding **/
+
+$p-m: 5rem;
+$p-t: 6rem;
+$p-d: 7.5rem;
 
 /** Bootstrap **/
 
