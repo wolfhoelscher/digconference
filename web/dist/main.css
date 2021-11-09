@@ -549,8 +549,8 @@ h3,
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: -20rem;
-  height: 60rem;
+  margin-top: -10rem;
+  height: 40rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -561,6 +561,7 @@ h3,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border-bottom: 1px solid #fff;
 }
 .hero--subhead {
   color: #F05A28;
@@ -574,6 +575,7 @@ h3,
 .w--wrap.container {
   padding-top: 5rem;
   padding-bottom: 5rem;
+  border-bottom: 1px solid #fff;
 }
 .w-filter {
   background: #F15A29;

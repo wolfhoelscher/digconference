@@ -8,11 +8,12 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        margin-top: -20rem;
-        height: 60rem;
+        margin-top: -10rem;
+        height: 40rem;
         display: flex;
         justify-content: center;
         flex-direction: column;
+        border-bottom: 1px solid $white;
     }
     
     .hero--subhead {
@@ -28,6 +29,7 @@
     .w--wrap.container {
         padding-top: 5rem;
         padding-bottom: 5rem;
+        border-bottom: 1px solid $white;
     }
     
     .w-filter {
