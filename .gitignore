@@ -22,3 +22,4 @@ web/servd-volumes/
 !.vscode/extensions.json
 /web/cpresources/*
 /xd-assets/*
+composer.lock
