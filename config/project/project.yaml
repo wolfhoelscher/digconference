@@ -1,4 +1,4 @@
-dateModified: 1636552985
+dateModified: 1636560248
 email:
   fromEmail: wolfhoelscher@gmail.com
   fromName: 'DIG Conference'
@@ -36,6 +36,10 @@ meta:
     de6da1a6-867d-4e20-b532-29a8b37faff0: 'Workshop Category' # Workshop Category
     f399f771-94d2-4947-b646-5167ef3e7739: 'DIG Conference' # DIG Conference
 plugins:
+  minify:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   sprig:
     edition: standard
     enabled: true
