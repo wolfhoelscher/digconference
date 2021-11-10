@@ -1,6 +1,7 @@
 {
     "require": {
         "craftcms/cms": "3.7.20",
+        "nystudio107/craft-minify": "1.2.10",
         "putyourlightson/craft-sprig": "1.10.4",
         "vlucas/phpdotenv": "^3.4.0"
     },
