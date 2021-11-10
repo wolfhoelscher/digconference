@@ -1,4 +1,11 @@
 # Changelog
+## 1.0.3 - 2021-11-09
+### Added
+- Bootstrip via jsDeliver CDN
+- fonts and preload
+- mobile, tablet, desktop styling
+### Removed
+- dropdown functionality for about menu item.
 ## 1.0.2 - 2021-11-07
 ### Added
 - logo global fields and main.twig init

@@ -7,42 +7,53 @@
     .all()
 %}
 
-<ul id="w-filter" aria-label="Workshop Filter">
+<ul id="w-filter-1" class="w-filter form-check" aria-label="Workshop Filter">
     {% set i = 6 %}
     {% for cat in craft.categories().group('workshopOptions').all %}
-        <li>
+        <li class="form-check-inline">
             <input sprig type="checkbox" id="checkbox_{{ cat.id|e }}" name="workshopCat[{{ i }}]" value="{{ cat.id|e }}" {{ cat.id in workshopCat ? 'checked' : '' }}>
-            <label for="checkbox_{{ cat.id }}"> {{ cat.title|e }}</label>
+            <label for="checkbox_{{ cat.id }}"><span class="w--icon">
+                {# Should use a macro here.  #}
+                {% switch cat.id %}
+                    {% case "6" %}
+                    {% include "_svg/dev-icon.twig" %}
+                    {% case "7" %}
+                    {% include "_svg/strat-icon.twig" %}
+                    {% case "8" %}
+                    {% include "_svg/design-icon.twig" %}
+                    {% default %}
+                {% endswitch %}</span><span class="w--cat-title">  {{ cat.title|e }}</span></label>
         </li>
         {% set i = i + 1 %}
     {% endfor %}
 </ul>
-<div id="w-results" class="w--loop">
+<div id="w-results" class="w--loop container">
     {% for workshop in query %}
         {% set cats = workshop.workshopCat.all() %}
-        
         <article class="workshop">
-            <header>
-                <h3 class="w--title">{{ workshop.title|e }}</h3>
-            </header>
-            <ul class="w--cats">
-            {% for cat in cats %}
-                <li class="workshop--cat workshop-{{ cat.id|e }}">
-                    <span class="w--icon">
-                    {% switch cat.id %}
-                        {% case "6" %}
-                        {% include "_svg/dev-icon.twig" %}
-                        {% case "7" %}
-                        {% include "_svg/strat-icon.twig" %}
-                        {% case "8" %}
-                        {% include "_svg/design-icon.twig" %}
-                        {% default %}
-                    {% endswitch %}
-                    </span>
-                    <span class="screen-reader-text">{{ cat.title|e }}</span>
-                </li>
-            {% endfor %}
-            </ul>
+            <a class="w--link" href="#" aria-label="{{ workshop.title|e }}" rel="bookmark">
+                <header>
+                    <h3 class="w--title">{{ workshop.title|e }}</h3>
+                </header>
+                <ul class="w--cats">
+                {% for cat in cats %}
+                    <li class="workshop--cat workshop-{{ cat.id|e }}">
+                        <span class="w--icon">
+                        {% switch cat.id %}
+                            {% case "6" %}
+                            {% include "_svg/dev-icon.twig" %}
+                            {% case "7" %}
+                            {% include "_svg/strat-icon.twig" %}
+                            {% case "8" %}
+                            {% include "_svg/design-icon.twig" %}
+                            {% default %}
+                        {% endswitch %}
+                        </span>
+                        <span class="screen-reader-text">{{ cat.title|e }}</span>
+                    </li>
+                {% endfor %}
+                </ul>
+            </a>
         </article>
     {% endfor %}
 </div>
