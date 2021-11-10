@@ -1,3 +1,92 @@
 /***************************************************
  * > Header
 ***************************************************/
+
+.navbar {
+    padding-top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    padding-top: 2rem;
+}
+
+.navbar-collapse {
+    position: absolute;
+    top: 11rem;
+    left: 0;
+    right: 0;
+    background-color: $orange;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.navbar-dark .navbar-toggler {
+    border: 1px solid $white;
+}
+
+.navbar-dark .navbar-nav .nav-link,
+.nav-link.button {
+    text-transform: uppercase;
+    color: $white;
+    font-size: 1.8rem;
+    line-height: 2.16rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid $white;
+}
+
+.subnav {
+    padding-left: 0;
+}
+
+.nav-link.button {
+    padding-left: 0;
+    border-bottom: none;
+}
+
+@media only screen and (min-width: 992px) {
+    .navbar-collapse {
+        background: transparent;
+        position: relative;
+        top: 0;
+        align-items: start;
+        padding-top: 0;
+    }
+    .header--wrap.container {
+        align-items: baseline;
+    }
+    .navbar-brand {
+        padding-top: 4rem;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        border-bottom: none;
+    }
+    li.dropdown {
+        margin-right: 10rem;
+    }
+    .navbar-dark .navbar-nav {
+        .dropdown .nav-link {
+            padding-bottom: 0;
+        }
+        .subnav {
+            .sub--link.nav-link {
+                padding-top: 0;
+            }
+        }
+    }
+    /* Register button */
+    .nav-link.button {
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+        background: $purple-to-blue-right;
+        padding-left: 6rem;
+        padding-right: 6rem;
+        border-radius: 50px;
+        transition: background 0.5s linear;
+        &:hover {
+            background: $blue;
+        }
+    }
+}

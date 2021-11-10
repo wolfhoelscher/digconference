@@ -1,3 +1,45 @@
 /***************************************************
  * > Footer
 ***************************************************/
+
+.footer--wrap {
+    padding-top: $p-m;
+}
+
+.footer-logo {
+    margin: 0 0 $p-m;
+}
+
+.social-icons {
+    width: 7rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer--wrap {
+        padding-top: $p-t;
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-area.last {
+        text-align: right;
+    }
+    .social-icons {
+        width: auto;
+        justify-content: flex-end;
+    }
+    .social-icon {
+        padding-left: 2rem;
+        height: 2.8rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .footer--wrap {
+        padding-top: $p-d;
+        .h3 {
+            margin-bottom: 2.5rem;
+        }
+    }
+}
