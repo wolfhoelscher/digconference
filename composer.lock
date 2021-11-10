@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b05265125ef3b02e54466d6f28a65bec",
+    "content-hash": "4ac4f2a9add39baeff5f70521d4867b3",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -349,11 +349,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.7.19.1",
+            "version": "3.7.20",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/2f07f450733c6cb7c4df2af5846e5d485011fbdd",
-                "reference": "2f07f450733c6cb7c4df2af5846e5d485011fbdd",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/20a3c7990e2ff9b7be87bc939b7a46de6c3b579a",
+                "reference": "20a3c7990e2ff9b7be87bc939b7a46de6c3b579a",
                 "shasum": ""
             },
             "require": {
@@ -437,7 +437,7 @@
                 "docs": "https://craftcms.com/docs/3.x/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2021-11-04T16:08:29+00:00"
+            "time": "2021-11-06T19:30:18+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -1752,15 +1752,15 @@
         },
         {
             "name": "psr/container",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/container/zipball/8622567409010282b7aeebe4bb841fe98b58dcaf",
-                "reference": "8622567409010282b7aeebe4bb841fe98b58dcaf",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/513e0666f7216c7459170d56df27dfcefe1689ea",
+                "reference": "513e0666f7216c7459170d56df27dfcefe1689ea",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.2.0"
+                "php": ">=7.4.0"
             },
             "type": "library",
             "autoload": {
@@ -1786,7 +1786,7 @@
                 "container-interop",
                 "psr"
             ],
-            "time": "2021-03-05T17:36:06+00:00"
+            "time": "2021-11-05T16:50:12+00:00"
         },
         {
             "name": "psr/http-client",
@@ -1965,6 +1965,11 @@
         {
             "name": "putyourlightson/craft-sprig",
             "version": "1.10.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/putyourlightson/craft-sprig.git",
+                "reference": "527b84b25fe94a5c51f98db8721f9d875e5d972f"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/putyourlightson/craft-sprig/zipball/527b84b25fe94a5c51f98db8721f9d875e5d972f",
@@ -1992,28 +1997,46 @@
                     "putyourlightson\\sprig\\plugin\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "mit"
             ],
             "description": "A reactive Twig component framework for Craft.",
             "support": {
                 "docs": "https://putyourlightson.com/plugins/sprig",
-                "source": "https://github.com/putyourlightson/craft-sprig",
-                "issues": "https://github.com/putyourlightson/craft-sprig/issues"
+                "issues": "https://github.com/putyourlightson/craft-sprig/issues",
+                "source": "https://github.com/putyourlightson/craft-sprig"
             },
+            "funding": [
+                {
+                    "url": "https://github.com/bencroker",
+                    "type": "github"
+                }
+            ],
             "time": "2021-10-22T10:18:56+00:00"
         },
         {
             "name": "putyourlightson/craft-sprig-core",
-            "version": "1.1.5",
+            "version": "1.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/putyourlightson/craft-sprig-core.git",
+                "reference": "7a457a0a45296b4384442e64921af6cd2b4794ee"
+            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/putyourlightson/craft-sprig-core/zipball/2cceb723aa0dd47f910cbfe6ccbe649b2d8c494e",
-                "reference": "2cceb723aa0dd47f910cbfe6ccbe649b2d8c494e",
+                "url": "https://api.github.com/repos/putyourlightson/craft-sprig-core/zipball/7a457a0a45296b4384442e64921af6cd2b4794ee",
+                "reference": "7a457a0a45296b4384442e64921af6cd2b4794ee",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^3.3.0"
+            },
+            "require-dev": {
+                "codeception/codeception": "^4.0.0",
+                "codeception/module-asserts": "^1.0.0",
+                "codeception/module-yii2": "^1.0.0",
+                "vlucas/phpdotenv": "^3.0"
             },
             "type": "craft-module",
             "autoload": {
@@ -2021,16 +2044,17 @@
                     "putyourlightson\\sprig\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "mit"
             ],
             "description": "A reactive Twig component framework for Craft.",
             "support": {
                 "docs": "https://github.com/putyourlightson/craft-sprig-core",
-                "source": "https://github.com/putyourlightson/craft-sprig-core",
-                "issues": "https://github.com/putyourlightson/craft-sprig-core/issues"
+                "issues": "https://github.com/putyourlightson/craft-sprig-core/issues",
+                "source": "https://github.com/putyourlightson/craft-sprig-core"
             },
-            "time": "2021-10-25T17:20:22+00:00"
+            "time": "2021-11-08T11:03:32+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
