@@ -24,6 +24,23 @@
         line-height: 1.2;
         text-transform: uppercase;
     }
+    
+    @media only screen and (min-width: 768px) {
+        #hero {
+            margin-top: -13rem;
+            height: 55rem;
+            h1 {
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+    
+    @media only screen and (min-width: 1200px) {
+        #hero {
+            margin-top: -13rem;
+            height: 69.5rem;
+        }
+    }
     /** Workshops **/
     
     .w--wrap.container {
