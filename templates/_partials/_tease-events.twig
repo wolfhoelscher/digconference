@@ -1,8 +1,8 @@
 <article class="event">
     <a class="event--link info--link" href="#" aria-label="{{ event.title|e }}" rel="bookmark">
-        {% if event.date|length %}<figure class="event--date"><span class="month">{{ event.date|date('M')|e }}</span class="day"><br>{{ event.date|date('j')|e }}</span></figure>{% endif %}
+        {% if event.date|length %}<figure class="event--date"><div class="month">{{ event.date|date('M')|e }}</div><div class="day">{{ event.date|date('j')|e }}</div></figure>{% endif %}
         <div class="event--info">
-            <h3 class="event--title">{{ event.title|e }}
+            <h3 class="event--title">{{ event.title|e }}</h3>
             {% if event.startTime %}
             <p class="event--times meta">{{ event.startTime|time('g:i a', locale='America/Winnipeg')|replace({'am': 'a.m.', 'pm': 'p.m.'})|e }}{% if event.endTime and event.endTime > event.startTime %}&nbsp;&ndash;&nbsp;{{ event.endTime|time('g:i a', locale='America/Winnipeg')|replace({'am': 'a.m.', 'pm': 'p.m.'})|e }}{% endif %}</p>
             {% endif %}
