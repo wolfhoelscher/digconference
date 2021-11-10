@@ -131,10 +131,14 @@
     }
     
     @media only screen and (min-width: 767px) {
+        .w--wrap.container {
+            padding-top: $p-t;
+            padding-bottom: $p-t;
+        }
         .w-filter {
             display: flex;
-            padding-right: 7.5rem;
-            padding-left: 7.5rem;
+            padding-right: 5.5rem;
+            padding-left: 5.5rem;
             justify-content: space-between;
         }
         #w-results {
@@ -146,12 +150,14 @@
     
     @media only screen and (min-width: 992px) {
         .w--wrap.container {
-            padding-top: $p-t;
-            padding-bottom: $p-t;
+            padding-top: $p-d;
+            padding-bottom: $p-d;
         }
         .w-filter {
             margin-top: 4.4rem;
             margin-bottom: 4.4rem;
+            padding-right: 7.5rem;
+            padding-left: 7.5rem;
         }
         #w-results {
             grid-gap: 3rem;

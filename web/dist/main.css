@@ -749,12 +749,17 @@ h3,
   color: #fff;
 }
 @media only screen and (min-width: 767px) {
+  .w--wrap.container {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
   .w-filter {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-right: 7.5rem;
-    padding-left: 7.5rem;
+    padding-right: 5.5rem;
+    padding-left: 5.5rem;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -768,13 +773,15 @@ h3,
 }
 @media only screen and (min-width: 992px) {
   .w--wrap.container {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
   }
 
   .w-filter {
     margin-top: 4.4rem;
     margin-bottom: 4.4rem;
+    padding-right: 7.5rem;
+    padding-left: 7.5rem;
   }
 
   #w-results {
