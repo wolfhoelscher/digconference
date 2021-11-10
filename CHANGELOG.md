@@ -1,9 +1,4 @@
 # Changelog
-## 1.0.4 - 2021-11-09
-## Changed
-- Updated to Craft 3.9.20
-### Fixed
-- deprecation error (order to orderBy)
 ## 1.0.3 - 2021-11-09
 ### Added
 - Bootstrip via jsDeliver CDN
