@@ -41,9 +41,9 @@ handle: logos
 hasUrls: true
 name: Logos
 settings:
-  path: /assets/logos
+  path: '@webroot/assets/logos'
 sortOrder: 1
 titleTranslationKeyFormat: null
 titleTranslationMethod: null
 type: craft\volumes\Local
-url: /logos/
+url: '@web/logos/'
