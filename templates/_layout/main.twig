@@ -30,7 +30,7 @@
             <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
             <div class="site-container">
             {% block siteHeader %}
-            <header class="site-header container navbar navbar-expand-lg navbar-dark bg-transparent">
+            <header class="site-header navbar navbar-expand-lg navbar-dark bg-transparent">
                 <div class="header--wrap container gx-5 ">
                     <a 
                     aria-label="Return to Home Page"
@@ -67,8 +67,8 @@
             </main>
         {% block siteFooter %}
             {# {% cache %} #}
-            <footer class="site-footer container gx-5">
-                <div class="footer--wrap">
+            <footer class="site-footer">
+                <div class="footer--wrap container gx-5">
                     <div class="footer-area first">
                         <figure class="footer-logo" aria-hidden="true">
                         {% set logo = branding.footerLogo.one() %}

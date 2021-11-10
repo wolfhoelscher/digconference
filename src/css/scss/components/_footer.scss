@@ -3,7 +3,8 @@
 ***************************************************/
 
 .footer--wrap {
-    padding: $p-m 0;
+    padding-top: $p-m;
+    padding-bottom: $p-m;
 }
 
 .footer-logo {
@@ -18,7 +19,8 @@
 
 @media only screen and (min-width: 768px) {
     .footer--wrap {
-        padding: $p-t 0;
+        padding-top: $p-t;
+        padding-bottom: $p-t;
         display: flex;
         justify-content: space-between;
     }
@@ -37,6 +39,7 @@
 
 @media only screen and (min-width: 992px) {
     .footer--wrap {
-        padding: $p-d 0;
+        padding-top: $p-d;
+        padding-bottom: $p-d;
     }
 }

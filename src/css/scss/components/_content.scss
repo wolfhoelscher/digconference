@@ -43,10 +43,13 @@
     }
     /** Workshops **/
     
+    #workshops {
+        border-bottom: 1px solid $white;
+    }
+    
     .w--wrap.container {
         padding-top: $p-m;
         padding-bottom: $p-m;
-        border-bottom: 1px solid $white;
     }
     
     .w-filter {
@@ -262,9 +265,21 @@
     }
     
     @media only screen and (min-width: 992px) {
+        .info--wrap {
+            display: flex;
+        }
         #events,
         #news {
             padding-top: $p-d;
             padding-bottom: $p-d;
+            border-bottom: none;
+            width: 50%;
+        }
+        #events {
+            border-right: 1px solid $white;
+            padding-right: 5%;
+        }
+        #news {
+            padding-left: 5%;
         }
     }
