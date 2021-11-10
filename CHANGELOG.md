@@ -1,4 +1,11 @@
 # Changelog
+## 1.1.0 - 2021-11-10
+### Added
+- favicon and webclip
+- html minify plugin
+### Changed 
+- Updated to Craft 3.7.20
+- Compiled assets
 ## 1.0.3 - 2021-11-09
 ### Added
 - Bootstrip via jsDeliver CDN
