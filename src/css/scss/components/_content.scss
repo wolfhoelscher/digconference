@@ -252,3 +252,19 @@
         text-align: right;
         display: block;
     }
+    
+    @media only screen and (min-width: 768px) {
+        #events,
+        #news {
+            padding-top: $p-t;
+            padding-bottom: $p-t;
+        }
+    }
+    
+    @media only screen and (min-width: 992px) {
+        #events,
+        #news {
+            padding-top: $p-d;
+            padding-bottom: $p-d;
+        }
+    }
