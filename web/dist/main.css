@@ -499,10 +499,15 @@ h3,
   letter-spacing: 0.15rem;
   line-height: 29.5px;
 }
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1200px) {
   h1,
 .h1 {
     font-size: 10rem;
+  }
+
+  h3,
+.h3 {
+    margin-bottom: 2.5rem;
   }
 }
 /***************************************************
@@ -914,6 +919,38 @@ h3,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media only screen and (min-width: 768px) {
+  .footer--wrap {
+    padding: 6rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .footer-area.last {
+    text-align: right;
+  }
+
+  .social-icons {
+    width: auto;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+
+  .social-icon {
+    padding-left: 2rem;
+    height: 2.8rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .footer--wrap {
+    padding: 7.5rem 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map*/

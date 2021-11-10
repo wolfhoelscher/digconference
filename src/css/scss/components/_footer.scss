@@ -15,3 +15,28 @@
     display: flex;
     justify-content: space-between;
 }
+
+@media only screen and (min-width: 768px) {
+    .footer--wrap {
+        padding: $p-t 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-area.last {
+        text-align: right;
+    }
+    .social-icons {
+        width: auto;
+        justify-content: flex-end;
+    }
+    .social-icon {
+        padding-left: 2rem;
+        height: 2.8rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .footer--wrap {
+        padding: $p-d 0;
+    }
+}

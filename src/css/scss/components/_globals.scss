@@ -85,9 +85,13 @@ h3,
     line-height: 29.5px;
 }
 
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1200px) {
     h1,
     .h1 {
         font-size: 10rem;
+    }
+    h3,
+    .h3 {
+        margin-bottom: 2.5rem;
     }
 }
