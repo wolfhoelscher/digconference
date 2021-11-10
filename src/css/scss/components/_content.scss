@@ -37,7 +37,6 @@
     
     @media only screen and (min-width: 1200px) {
         #hero {
-            margin-top: -13rem;
             height: 69.5rem;
         }
     }
@@ -161,6 +160,10 @@
             margin-bottom: 4.4rem;
             padding-right: 7.5rem;
             padding-left: 7.5rem;
+            label {
+                font-size: 1.8rem;
+                letter-spacing: .1em;
+            }
         }
         #w-results {
             grid-gap: 3rem;

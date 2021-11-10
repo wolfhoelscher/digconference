@@ -56,6 +56,9 @@
     .header--wrap.container {
         align-items: baseline;
     }
+    .navbar-brand {
+        padding-top: 4rem;
+    }
     .navbar-dark .navbar-nav .nav-link {
         border-bottom: none;
     }
@@ -81,5 +84,9 @@
         padding-left: 6rem;
         padding-right: 6rem;
         border-radius: 50px;
+        transition: background 0.5s linear;
+        &:hover {
+            background: $blue;
+        }
     }
 }

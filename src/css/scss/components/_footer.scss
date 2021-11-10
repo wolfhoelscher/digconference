@@ -4,7 +4,6 @@
 
 .footer--wrap {
     padding-top: $p-m;
-    padding-bottom: $p-m;
 }
 
 .footer-logo {
@@ -20,7 +19,6 @@
 @media only screen and (min-width: 768px) {
     .footer--wrap {
         padding-top: $p-t;
-        padding-bottom: $p-t;
         display: flex;
         justify-content: space-between;
     }
@@ -40,6 +38,8 @@
 @media only screen and (min-width: 992px) {
     .footer--wrap {
         padding-top: $p-d;
-        padding-bottom: $p-d;
+        .h3 {
+            margin-bottom: 2.5rem;
+        }
     }
 }
