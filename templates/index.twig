@@ -20,7 +20,7 @@
             {% set events = craft.entries
                 .section("events")
                 .date('>= start')
-                .order('date', 'startTime')
+                .orderBy('date', 'startTime')
                 .limit(3)
                 .all()
             %}
