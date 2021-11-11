@@ -4,7 +4,7 @@
     /** Hero **/
     
     #hero {
-        background-image: linear-gradient(rgba(30, 51, 88, 0.75), rgba(30, 51, 88, 0.75)), url(../images/btr-skyline-bw.jpg);
+        background-image: linear-gradient(rgba(30, 51, 88, 0.75), rgba(30, 51, 88, 0.75)), url(../images/btr-skyline-bw-864.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -27,6 +27,7 @@
     
     @media only screen and (min-width: 768px) {
         #hero {
+            background-image: linear-gradient(rgba(30, 51, 88, 0.75), rgba(30, 51, 88, 0.75)), url(../images/btr-skyline-bw.jpg);
             margin-top: -13rem;
             height: 55rem;
             h1 {
