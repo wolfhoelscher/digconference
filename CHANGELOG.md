@@ -1,4 +1,7 @@
 # Changelog
+## 1.1.1 - 2021-11-10
+## Added
+- Mobile version of hero bg img
 ## 1.1.0 - 2021-11-10
 ### Added
 - favicon and webclip
